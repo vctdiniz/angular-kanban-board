@@ -1,0 +1,6 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" class="row">
+  <mat-form-field>
+    <input matInput name="taskName" ngModel #taskName="ngModel" required placeholder="New task name...">
+  </mat-form-field>
+  <button [disabled]="!taskName.valid" type="submit" mat-raised-button color="primary">Create task</button>
+</form>

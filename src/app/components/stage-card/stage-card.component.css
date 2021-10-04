@@ -1,0 +1,8 @@
+.stage-card {
+  max-width: 400px;
+  min-height: 75vh;
+  max-height: 100%;
+}
+mat-card-header {
+  justify-content: center;
+}

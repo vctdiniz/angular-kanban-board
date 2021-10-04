@@ -1,0 +1,12 @@
+<mat-card class="task" [class.mat-elevation-z8]="classElevation" (mouseover)="hoverItem($event)"
+  (mouseleave)="hoverItem($event)">
+  <mat-card-header>
+    <mat-card-title>{{ task.name }}</mat-card-title>
+    <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+  </mat-card-header>
+  <mat-card-actions>
+    <button mat-button color="secondary" *ngIf="task.stage !== 'backlog'">BACK</button>
+    <button mat-button color="primary" *ngIf="task.stage !== 'done'">NEXT</button>
+    <button mat-button color="warn">DELETE</button>
+  </mat-card-actions>
+</mat-card>
